@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700&subset=devanagari,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
+/* ||| CODE STYLE CSS = ( GLOBAL ) ||| */
+
+body {
+    font-family: 'Quicksand', sans-serif !important;
+    background: #f5f5f5 !important;
+}
+
+/* ----------
+    PERFIL 
+---------- */
+.perfil {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px;
+    padding-bottom: 20px;
+    background: #fff;
+    border-radius: 25px;
+    border-bottom: 3px solid #5900ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.08);
+    display: none;
+}.perfil.visivel {
+    display: block;
+}
+
+.perfil hr {
+    width: 50%;
+    height: 2.5px;
+    margin: 20px auto;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 25px;
+}
+
+/* ----------
+    AVATAR 
+---------- */
+.perfil .avatar {
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border: 5px solid rgb(89, 0, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}.perfil .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ----------
+   CONTEUDO 
+---------- */
+.perfil .conteudo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.perfil .conteudo span {
+    margin: 5px auto;
+    display: block;
+}.perfil .conteudo span.nome {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}.perfil .conteudo span.bio {
+    line-height: 20px;
+}
+
+.perfil .conteudo em {
+    margin: 10px 0;
+    text-align: left;
+    font-weight: bold;
+    font-style: normal;
+    display: block;
+}.perfil .conteudo em::before {
+    color: #4d01ff;
+    content: '+';
+    display: inline-block;
+}
+
+/* ----------
+    RODAPE 
+---------- */
+.perfil .rodape {
+    width: 100%;
+    margin-top: 20px;
+}.perfil .rodape button {
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgb(89, 0, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    outline: none;
+    transform: translateX(-50%);
+}
+
+
+
+/* ----------
+  FORMULÁRIO 
+---------- */
+.form {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.form input {
+    width: 160px;
+    padding: 9px 15px;
+    background: rgba(0,0,0,0.08);
+    border: none;
+    border: 2px solid rgba(0,0,0,0.09);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    outline: none;
+}
+
+.form button {
+    width: max-content;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #4d01ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
