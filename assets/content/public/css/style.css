@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900,&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+/* ||| CODE STYLE CSS = ( GLOBAL ) ||| */
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background: #f5f5f5 !important;
+}
+
+/* ----------
+  PROFILE
+---------- */
+.profile {
+  width: 500px;
+  margin: 50px auto 0 auto;
+  padding: 50px 50px 25px 50px;
+  background: #fff;
+  border-radius: 25px;
+  border-bottom: 3px solid #495aff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.08);
+  display: none;
+}
+.profile.visible {
+  display: block;
+}
+
+.profile hr {
+  width: 50%;
+  height: 2.5px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 25px;
+}
+
+/* ----------
+  AVATAR 
+---------- */
+.profile .avatar {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border: 5px solid #495aff;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ----------
+  CONTENT 
+---------- */
+.profile .content {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.profile .content span {
+  margin: 5px auto;
+  display: block;
+}
+.profile .content span.name {
+  margin: 20px 0 20px 0;
+  font-weight: bold;
+}
+.profile .content span.biography {
+  line-height: 20px;
+}
+
+.profile .content em {
+  margin: 10px 0;
+  text-align: left;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+}
+.profile .content em::before {
+  content: "+";
+  margin-right: 5px;
+  color: #495aff;
+  display: inline-block;
+}
+
+/* ----------
+  FOOTER
+---------- */
+.profile .footer {
+  width: 100%;
+  margin-top: 20px;
+}
+.profile .footer button {
+  width: max-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background: #495aff;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  outline: none;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+/* ----------
+  FORMULÁRIO 
+---------- */
+.form {
+  width: 100%;
+  margin: 25px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.form input {
+  width: 160px;
+  padding: 9px 15px;
+  background: rgba(0, 0, 0, 0.08);
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0.09);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  outline: none;
+}
+
+.form button {
+  width: max-content;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #495aff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
